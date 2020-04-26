@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.8/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.8/brython_stdlib.js"></script>
+    <title>Quotes by Brython</title>
+</head>
+
+<body onload="brython()">
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Quotes by Brython
+            </h1>
+            <hr>
+            <div class="box is-primary">
+                <div class="columns is-desktop">
+                    <div class="column">
+                        <button id="qodButton" class="button is-danger is-large is-fullwidth">Quote of the day</button>
+                        <br>
+                        <button id="randomButton" class="button is-dark is-large is-fullwidth">Random</button>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-content hero is-dark">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Author</p>
+                                        <p id="author" class="subtitle is-6">John Doe</p>
+                                    </div>
+                                </div>
+                                <p id="quote" class="title">
+                                    “Some Quote”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/python" src="./main.py"> </script>
+</body>
+
+</html>
